@@ -1,0 +1,382 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zinster Bistro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="#" class="logo">
+        <span class="utensil">🍴</span>
+        <span class="logo-text">
+            <strong>ZINSTER</strong>
+            <small>B I S T R O</small>
+        </span>
+        <span class="utensil">🍴</span>
+    </a>
+
+    <nav>
+        <a href="#" class="active">Home</a>
+        <a href="#products">Products and Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#about">About us</a>
+    </nav>
+
+    <button type="button" class="gold-btn header-btn" disabled>
+    Get Started →
+</button>
+</header>
+
+<main>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="eyebrow">GOOD FOOD <span>•</span> GREAT MOOD</p>
+            <div class="gold-line"></div>
+
+            <h1>Where Every Bite Feels Like Luxury</h1>
+
+            <div class="gold-line"></div>
+
+            <p class="hero-description">
+                Experience rich flavors, elegant dining,
+                and food crafted with passion. At Zinster
+                Bistro, we turn simple moments into
+                unforgettable meals.
+            </p>
+
+            <a href="#products" class="gold-btn">Order Now →</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="hero.png" alt="Zinster Bistro signature food">
+        </div>
+    </section>
+
+    <!-- PRODUCTS AND SERVICES -->
+    <section class="products section" id="products">
+
+        <div class="section-heading">
+            <p class="eyebrow">OUR MENU</p>
+            <h2>Products and Services</h2>
+            <p>Delicious food. Perfectly served.</p>
+        </div>
+
+        <div class="categories">
+            <button class="category active" data-filter="all">All</button>
+            <button class="category" data-filter="main">Main Dishes</button>
+            <button class="category" data-filter="snacks">Snacks</button>
+            <button class="category" data-filter="desserts">Desserts</button>
+            <button class="category" data-filter="drinks">Drinks</button>
+        </div>
+
+        <div class="product-grid">
+
+            <!-- MAIN DISHES -->
+
+            <article class="product-card" data-category="main">
+                <img src="STEAK.jpg" alt="Steak">
+                <div class="product-info">
+                    <h3>Steak</h3>
+                    <p>₱250</p>
+                    <a href="#pricing" aria-label="Steak price">↗</a>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="main">
+                <img src="CHICKEN WINGS.jpg" alt="Chicken Wings">
+                <div class="product-info">
+                    <h3>Chicken Wings</h3>
+                    <p>₱120</p>
+                    <a href="#pricing" aria-label="Chicken Wings price">↗</a>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="main">
+                <img src="PORK BELLY.avif" alt="Pork Belly">
+                <div class="product-info">
+                    <h3>Pork Belly</h3>
+                    <p>₱180</p>
+                    <a href="#pricing" aria-label="Pork Belly price">↗</a>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="main">
+                <img src="GRILLED CHICKEN.jpg" alt="Grilled Chicken">
+                <div class="product-info">
+                    <h3>Grilled Chicken</h3>
+                    <p>₱160</p>
+                    <a href="#pricing" aria-label="Grilled Chicken price">↗</a>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="main">
+                <img src="SPAGETTI.jpg" alt="Spaghetti">
+                <div class="product-info">
+                    <h3>Spaghetti</h3>
+                    <p>₱140</p>
+                    <a href="#pricing" aria-label="Spaghetti price">↗</a>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="main">
+                <img src="FRIED CHICKEN.avif" alt="Fried Chicken">
+                <div class="product-info">
+                    <h3>Fried Chicken</h3>
+                    <p>₱130</p>
+                    <a href="#pricing" aria-label="Fried Chicken price">↗</a>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="main">
+                <img src="BIHON EXPRESS.jpg" alt="Bihon Express">
+                <div class="product-info">
+                    <h3>Bihon Express</h3>
+                    <p>₱120</p>
+                    <a href="#pricing" aria-label="Bihon Express price">↗</a>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="main">
+                <img src="CARBONARA.jpg" alt="Carbonara">
+                <div class="product-info">
+                    <h3>Carbonara</h3>
+                    <p>₱150</p>
+                    <a href="#pricing" aria-label="Carbonara price">↗</a>
+                </div>
+            </article>
+
+            <!-- SNACKS: BURGER AND FRIES -->
+
+            <article class="product-card" data-category="snacks">
+                <img src="BURGER.avif" alt="Burger">
+                <div class="product-info">
+                    <h3>Burger</h3>
+                    <p>₱150</p>
+                    <a href="#pricing" aria-label="Burger price">↗</a>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="snacks">
+                <img src="FRIES.avif" alt="French Fries">
+                <div class="product-info">
+                    <h3>Fries</h3>
+                    <p>₱80</p>
+                    <a href="#pricing" aria-label="Fries price">↗</a>
+                </div>
+            </article>
+
+            <!-- DESSERTS -->
+
+            <article class="product-card" data-category="desserts">
+                <img src="ICE CREAM.jpg" alt="Ice Cream">
+                <div class="product-info">
+                    <h3>Ice Cream</h3>
+                    <p>₱70</p>
+                    <a href="#pricing" aria-label="Ice Cream price">↗</a>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="desserts">
+                <img src="HALOHALO.jpg" alt="Halo-halo">
+                <div class="product-info">
+                    <h3>Halo-halo</h3>
+                    <p>₱90</p>
+                    <a href="#pricing" aria-label="Halo-halo price">↗</a>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="desserts">
+                <img src="CHOCOLATE WAFFLE.webp" alt="Chocolate Waffle">
+                <div class="product-info">
+                    <h3>Waffle Chocolate</h3>
+                    <p>₱100</p>
+                    <a href="#pricing" aria-label="Waffle price">↗</a>
+                </div>
+            </article>
+
+            <!-- DRINKS -->
+
+            <article class="product-card" data-category="drinks">
+                <img src="WINE.jpg" alt="Wine">
+                <div class="product-info">
+                    <h3>Wine</h3>
+                    <p>₱200</p>
+                    <a href="#pricing" aria-label="Wine price">↗</a>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="drinks">
+                <img src="JUICE.jpg" alt="Juice">
+                <div class="product-info">
+                    <h3>Juice</h3>
+                    <p>₱60</p>
+                    <a href="#pricing" aria-label="Juice price">↗</a>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="drinks">
+                <img src="COKE.jpg" alt="Coke">
+                <div class="product-info">
+                    <h3>Coke</h3>
+                    <p>₱50</p>
+                    <a href="#pricing" aria-label="Coke price">↗</a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="pricing section" id="pricing">
+
+        <div class="pricing-intro">
+            <p class="eyebrow">GOOD FOOD, GREAT VALUE</p>
+            <h2>Pricing</h2>
+            <p>Great taste doesn't have to be expensive.</p>
+            <a href="#products" class="outline-btn">View Full Menu →</a>
+        </div>
+
+        <div class="price-card">
+            <span class="price-icon">♨</span>
+            <h3>Main Dishes</h3>
+            <p>Steak <span>₱250</span></p>
+            <p>Chicken Wings <span>₱120</span></p>
+            <p>Pork Belly <span>₱180</span></p>
+            <p>Grilled Chicken <span>₱160</span></p>
+            <p>Spaghetti <span>₱140</span></p>
+            <p>Fried Chicken <span>₱130</span></p>
+            <p>Bihon Express <span>₱120</span></p>
+            <p>Carbonara <span>₱150</span></p>
+        </div>
+
+        <div class="price-card">
+            <span class="price-icon">♜</span>
+            <h3>Snacks</h3>
+            <p>Burger <span>₱150</span></p>
+            <p>Fries <span>₱80</span></p>
+
+            <div class="price-note">
+                Fresh Ingredients<br>
+                Premium Taste<br>
+                Always.
+            </div>
+        </div>
+
+        <div class="price-card">
+            <span class="price-icon">♧</span>
+            <h3>Desserts</h3>
+            <p>Ice Cream <span>₱70</span></p>
+            <p>Halo-halo <span>₱90</span></p>
+            <p>Waffle Chocolate <span>₱100</span></p>
+        </div>
+
+        <div class="price-card">
+            <span class="price-icon">♙</span>
+            <h3>Drinks</h3>
+            <p>Wine <span>₱200</span></p>
+            <p>Juice <span>₱60</span></p>
+            <p>Coke <span>₱50</span></p>
+        </div>
+
+    </section>
+
+    <!-- ABOUT ZINSTER BISTRO -->
+    <section class="about" id="about">
+
+        <div class="about-image">
+            <img src="ABOUT.png" alt="Zinster Bistro restaurant">
+        </div>
+
+        <div class="about-content">
+            <p class="eyebrow">OUR STORY</p>
+            <h2>About Zinster Bistro</h2>
+
+            <p>
+                Zinster Bistro is more than just a restaurant —
+                it's a place where great food brings people together.
+                We started with a simple dream: to create a dining
+                experience that feels like home, but with a touch of luxury.
+            </p>
+
+            <p>
+                Using fresh ingredients, bold flavors, and a passion
+                for cooking, we serve dishes that make every moment
+                special. Whether it's a casual meal or a celebration,
+                Zinster Bistro is here to make it memorable.
+            </p>
+        </div>
+
+        <div class="about-features">
+
+            <div class="feature">
+                <span>♧</span>
+                <div>
+                    <h3>Fresh Ingredients</h3>
+                    <p>We use fresh, quality ingredients in every dish.</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <span>♡</span>
+                <div>
+                    <h3>Passion in Every Dish</h3>
+                    <p>Each meal is crafted with care and dedication.</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <span>♧</span>
+                <div>
+                    <h3>A Place for Everyone</h3>
+                    <p>Good food, great company, perfect moments.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>ZINSTER BISTRO <span>•</span> GOOD FOOD <span>•</span> GREAT MOOD</p>
+
+    <div class="socials">
+        <a href="#about" aria-label="Facebook">f</a>
+        <a href="#about" aria-label="Instagram">◎</a>
+        <a href="#about" aria-label="TikTok">♪</a>
+    </div>
+</footer>
+
+<script>
+    const categoryButtons = document.querySelectorAll(".category");
+    const productCards = document.querySelectorAll(".product-card");
+
+    categoryButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            const filter = button.dataset.filter;
+
+            categoryButtons.forEach(item => {
+                item.classList.remove("active");
+            });
+
+            button.classList.add("active");
+
+            productCards.forEach(card => {
+                const matches =
+                    filter === "all" ||
+                    card.dataset.category === filter;
+
+                card.style.display = matches ? "block" : "none";
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
