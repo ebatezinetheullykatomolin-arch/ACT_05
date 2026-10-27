@@ -676,13 +676,35 @@ button {
         font-size: 10px;
     }
 
-    .navbar nav {
-        order: 3;
-        width: 100%;
-        overflow-x: auto;
-        justify-content: flex-start;
-        padding: 6px 0;
-    }
+    
+.navbar nav {
+    order: 3;
+    width: 100%;
+    min-width: 0;
+    overflow: visible;
+    justify-content: center;
+    padding: 6px 0;
+}
+
+.nav-links {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px 18px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    display: inline-block;
+    padding: 4px 0;
+    font-size: 11px;
+}
+
 
     .navbar nav a {
         font-size: 10px;
