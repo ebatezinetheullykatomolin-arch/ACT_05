@@ -79,13 +79,15 @@
             <p>Delicious food. Perfectly served.</p>
         </div>
 
-        <div class="categories">
-            <button class="category active" data-filter="all">All</button>
-            <button class="category" data-filter="main">Main Dishes</button>
-            <button class="category" data-filter="snacks">Snacks</button>
-            <button class="category" data-filter="desserts">Desserts</button>
-            <button class="category" data-filter="drinks">Drinks</button>
-        </div>
+        
+<div class="categories" role="group" aria-label="Filter products by category">
+    <button class="category active" data-filter="all" aria-pressed="true">All</button>
+    <button class="category" data-filter="main" aria-pressed="false">Main Dishes</button>
+    <button class="category" data-filter="snacks" aria-pressed="false">Snacks</button>
+    <button class="category" data-filter="desserts" aria-pressed="false">Desserts</button>
+    <button class="category" data-filter="drinks" aria-pressed="false">Drinks</button>
+</div>
+
 
         <div class="product-grid">
 
@@ -366,28 +368,32 @@
 </footer>
 
 <script>
-    const categoryButtons = document.querySelectorAll(".category");
-    const productCards = document.querySelectorAll(".product-card");
+    
+const categoryButtons = document.querySelectorAll(".category");
+const productCards = document.querySelectorAll(".product-card");
 
-    categoryButtons.forEach(button => {
-        button.addEventListener("click", () => {
-            const filter = button.dataset.filter;
+categoryButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        const filter = button.dataset.filter;
 
-            categoryButtons.forEach(item => {
-                item.classList.remove("active");
-            });
+        categoryButtons.forEach(item => {
+            item.classList.remove("active");
+            item.setAttribute("aria-pressed", "false");
+        });
 
-            button.classList.add("active");
+        button.classList.add("active");
+        button.setAttribute("aria-pressed", "true");
 
-            productCards.forEach(card => {
-                const matches =
-                    filter === "all" ||
-                    card.dataset.category === filter;
+        productCards.forEach(card => {
+            const matches =
+                filter === "all" ||
+                card.dataset.category === filter;
 
-                card.style.display = matches ? "block" : "none";
-            });
+            card.style.display = matches ? "block" : "none";
         });
     });
+});
+
 </script>
 
 </body>
